@@ -1,0 +1,9 @@
+#main-toolbar {
+    height: 50px;
+    background-color: rgb(58, 58, 197);
+}
+
+span {
+    /* float: left; */
+    margin: 0 20px;
+}
