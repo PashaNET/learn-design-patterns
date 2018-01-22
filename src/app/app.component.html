@@ -1,9 +1,19 @@
 <div style="text-align:center">
   <app-toolbar></app-toolbar>
-  <div>
-    <app-side-bar></app-side-bar>
-    <router-outlet></router-outlet>
-  </div>
+  <mat-sidenav-container class="example-container">
+      <mat-sidenav #sidenav mode="side">
+        <app-side-bar></app-side-bar>
+      </mat-sidenav>
+    
+      <mat-sidenav-content>
+          <p>
+            <button mat-button (click)="sidenav.toggle()">
+              Menu >>>
+            </button>
+          </p>
+          <router-outlet></router-outlet>
+      </mat-sidenav-content>
+    </mat-sidenav-container>
 </div>
 
 

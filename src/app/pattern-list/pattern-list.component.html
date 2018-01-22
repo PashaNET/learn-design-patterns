@@ -1,3 +1,6 @@
-<p>
-  pattern-list works!
-</p>
+<div>
+  <p *ngIf="!patternsList.length">Waiting for data...</p>
+  <ul>
+    <li *ngFor="let pattern of patternsList"><a routerLink="/details/{{pattern.id}}">{{pattern.title}}</a></li>
+  </ul>
+</div>
