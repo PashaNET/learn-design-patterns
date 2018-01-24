@@ -1,4 +1,5 @@
-<div>
+<div *ngIf="patternDetails">
+  <button mat-button (click)="goBack()">Back</button>
   <h3>
       {{patternDetails.title}}
   </h3>

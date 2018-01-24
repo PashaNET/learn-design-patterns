@@ -1,3 +1,5 @@
 <div>
-  <section *ngFor="let menuItem of menuItems">{{menuItem.title}}</section>
+  <section *ngFor="let menuItem of menuItems">
+    <a routerLink="/details/{{menuItem.id}}">{{menuItem.title}}</a>
+  </section>
 </div>
