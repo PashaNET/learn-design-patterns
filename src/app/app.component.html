@@ -1,11 +1,11 @@
-<div style="text-align:center">
+<div id="template">
   <app-toolbar></app-toolbar>
   <mat-sidenav-container class="example-container">
       <mat-sidenav #sidenav mode="side">
         <app-side-bar></app-side-bar>
       </mat-sidenav>
-    
       <mat-sidenav-content>
+          <app-loader></app-loader>
           <button id="menu-button" mat-button (click)="sidenav.toggle()">
             <mat-icon>menu</mat-icon>
           </button>

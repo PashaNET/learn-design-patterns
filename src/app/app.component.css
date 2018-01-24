@@ -1,4 +1,12 @@
+#template {
+  text-align:center;
+  height: 100%;
+}
+.example-container {
+    height: 93%;
+}
+
 #menu-button {
-    position: absolute;
-    left: 0;
+  position: absolute;
+  left: 0;
 }

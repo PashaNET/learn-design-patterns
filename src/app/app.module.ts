@@ -11,8 +11,11 @@ import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { PatternService } from './pattern.service';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
+import { LoaderComponent } from './loader/loader.component';
+import { HttpLogInterceptorService } from './http-log-interceptor.service';
+import { CommunicationService } from './communication.service';
 
 @NgModule({
   exports: [
@@ -37,7 +40,8 @@ export class DemoMaterialModule {}
     PatternDetailsComponent,
     PatternListComponent,
     ProgressBarComponent,
-    NotFoundPageComponent
+    NotFoundPageComponent,
+    LoaderComponent
   ],
   imports: [
     BrowserModule,
@@ -46,7 +50,13 @@ export class DemoMaterialModule {}
     BrowserAnimationsModule,
     HttpClientModule
   ],
-  providers: [ PatternService ],
+  providers: [ 
+    PatternService, 
+    LoaderComponent, 
+    { provide: HTTP_INTERCEPTORS, 
+      useClass: HttpLogInterceptorService, 
+      multi: true },
+    CommunicationService],
   bootstrap: [ AppComponent ]
 })
 export class AppModule {}

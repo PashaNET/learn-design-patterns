@@ -1,9 +1,12 @@
 #main-toolbar {
-    height: 50px;
-    background-color: rgb(58, 58, 197);
+  height: 7%;
+  background-color: rgb(85, 85, 233);
+}
+
+a {
+  text-decoration: none;
 }
 
 span {
-    /* float: left; */
-    margin: 0 20px;
+  margin: 0 20px;
 }
