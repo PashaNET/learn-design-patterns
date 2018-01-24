@@ -1,7 +1,4 @@
 <div>
-  <div *ngIf="!patternsList.length">
-    <mat-progress-spinner [mode]="'indeterminate'"></mat-progress-spinner>
-  </div>
   <ul>
     <li *ngFor="let pattern of patternsList"><a routerLink="/details/{{pattern.id}}">{{pattern.title}}</a></li>
   </ul>

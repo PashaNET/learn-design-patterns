@@ -1,9 +1,12 @@
 <div *ngIf="patternDetails">
-  <button mat-button (click)="goBack()">Back</button>
   <h3>
       {{patternDetails.title}}
   </h3>
   <div>
     {{patternDetails.description}}
+  </div>
+  <div>
+      <button mat-button (click)="goBack()">Previous</button>
+      <button mat-button (click)="goForward()">Next</button>
   </div>
 </div>

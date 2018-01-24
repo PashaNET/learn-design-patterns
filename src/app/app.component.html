@@ -6,13 +6,9 @@
       </mat-sidenav>
     
       <mat-sidenav-content>
-          <p>
-            <button mat-button (click)="sidenav.toggle()">Menu >>> </button>
-          </p>
-          <nav>
-              <a routerLink="/details/2">2</a>
-              <a routerLink="/details/3">3</a>
-          </nav>
+          <button id="menu-button" mat-button (click)="sidenav.toggle()">
+            <mat-icon>menu</mat-icon>
+          </button>
           <router-outlet></router-outlet>
       </mat-sidenav-content>
     </mat-sidenav-container>

@@ -1,6 +1,11 @@
 /* @import "~@angular/material/prebuilt-themes/deeppurple-amber.css"; */
 @import "./indigo-pink.css";
 
+html {
+  height: 100%;
+}
+
 body {
-    margin: 0;
+  margin: 0;
+  height: 100%;
 }
