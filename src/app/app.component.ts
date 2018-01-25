@@ -7,6 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  varFromAppCom = 'vim';
+
+  // changeVal() {
+  //   this.varFromAppCom = this.varFromAppCom + '->';
+  // }
 
   someCalculation(numb: number) {
     if(numb == 5)

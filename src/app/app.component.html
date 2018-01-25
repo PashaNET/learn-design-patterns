@@ -1,5 +1,5 @@
 <div id="template">
-  <app-toolbar></app-toolbar>
+  <app-toolbar [varFromParentComponent]="varFromAppCom" (valueWasChanged)="varFromAppCom=$event"></app-toolbar>
   <mat-sidenav-container class="example-container">
       <mat-sidenav #sidenav mode="side">
         <app-side-bar></app-side-bar>
