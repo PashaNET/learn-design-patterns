@@ -53,9 +53,11 @@ export class DemoMaterialModule {}
   providers: [ 
     PatternService, 
     LoaderComponent, 
-    { provide: HTTP_INTERCEPTORS, 
+    { 
+      provide: HTTP_INTERCEPTORS, 
       useClass: HttpLogInterceptorService, 
-      multi: true },
+      multi: true 
+    },
     CommunicationService],
   bootstrap: [ AppComponent ]
 })

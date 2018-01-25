@@ -8,6 +8,12 @@ describe('AppComponent', () => {
       ],
     }).compileComponents();
   }));
+
+  it('should return 6 if input 5', () => {
+    const app = new AppComponent();
+    const result = app.someCalculation(5);
+    expect(result).toBe(6);
+  })
   it('should create the app', async(() => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;

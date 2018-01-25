@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+  someCalculation(numb: number) {
+    if(numb == 5)
+      return 6;
+    
+    return numb++;
+  }
 }
