@@ -1,3 +1,10 @@
 <div id="drag">
-  <img img="https://js.cx/clipart/ball.svg" />
+  <img 
+    (mousedown)="dragStart($event)" 
+    (mousemove)="dragMove($event)"
+    (mouseup)="dragEnd($event)" 
+    [class.dragStart]="isDragStarted" 
+    [style.top.px]="topPos" 
+    [style.left.px]="leftPos" 
+    src="https://js.cx/clipart/ball.svg" />
 </div>

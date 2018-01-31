@@ -49,7 +49,7 @@ export class DemoMaterialModule {}
     AppRoutingModule,
     DemoMaterialModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [ 
     PatternService, 
