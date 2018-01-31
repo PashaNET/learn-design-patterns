@@ -16,6 +16,7 @@ import { NotFoundPageComponent } from './not-found-page/not-found-page.component
 import { LoaderComponent } from './loader/loader.component';
 import { HttpLogInterceptorService } from './http-log-interceptor.service';
 import { CommunicationService } from './communication.service';
+import { DragNDropComponent } from './drag-n-drop/drag-n-drop.component';
 
 @NgModule({
   exports: [
@@ -28,7 +29,7 @@ import { CommunicationService } from './communication.service';
     MatProgressSpinnerModule,
     MatIconModule
   ],
-  declarations: []//modules for all mat elements which used in app
+  declarations: [DragNDropComponent]//modules for all mat elements which used in app
 })
 export class DemoMaterialModule {}
 
