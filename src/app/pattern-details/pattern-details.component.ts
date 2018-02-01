@@ -12,6 +12,7 @@ import { Location } from '@angular/common';
 export class PatternDetailsComponent implements OnInit {
   
   patternDetails: Pattern;
+  testSt: string = 'test';
 
   constructor(
     private patternService: PatternService, 
@@ -40,5 +41,9 @@ export class PatternDetailsComponent implements OnInit {
 
   goForward() {
     this.location.forward();
+  }
+
+  vChange() {
+    this.testSt = this.testSt + '->';
   }
 }

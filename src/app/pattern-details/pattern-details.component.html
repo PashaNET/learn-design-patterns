@@ -2,9 +2,9 @@
   <h3>
       {{patternDetails.title}}
   </h3>
-  <div>
-    {{patternDetails.description}}
-  </div>
+  
+  <input (keydown)="vChange()" [(value)]="testSt"/>
+  <p>{{testSt}}</p>
   <div>
       <button mat-button (click)="goBack()">Previous</button>
       <button mat-button (click)="goForward()">Next</button>

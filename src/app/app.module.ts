@@ -19,6 +19,16 @@ import { CommunicationService } from './communication.service';
 import { DragNDropComponent } from './drag-n-drop/drag-n-drop.component';
 
 @NgModule({
+  imports: [
+    MatProgressBarModule,
+    MatCardModule,
+    MatToolbarModule,
+    MatCheckboxModule,
+    MatSidenavModule,
+    MatButtonModule,
+    MatProgressSpinnerModule,
+    MatIconModule
+  ],
   exports: [
     MatProgressBarModule,
     MatCardModule,
@@ -42,14 +52,22 @@ export class DemoMaterialModule {}
     PatternListComponent,
     ProgressBarComponent,
     NotFoundPageComponent,
-    LoaderComponent
+    LoaderComponent,
+    DragNDropComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    DemoMaterialModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    MatProgressBarModule,
+    MatCardModule,
+    MatToolbarModule,
+    MatCheckboxModule,
+    MatSidenavModule,
+    MatButtonModule,
+    MatProgressSpinnerModule,
+    MatIconModule
   ],
   providers: [ 
     PatternService, 

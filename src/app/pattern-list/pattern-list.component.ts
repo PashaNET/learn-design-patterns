@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {PatternService} from '../pattern.service';
+import { PatternService } from '../pattern.service';
 import { Pattern } from '../Pattern';
 
 @Component({
